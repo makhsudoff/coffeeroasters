@@ -2,7 +2,9 @@
 :root {
   --text-color: #333;
   --accent-color: #0A775F;
+  --accent-light-brown: #C99B67;
   --outline-color: var(--accent-color);
+  --light-brown: #F3D7B7;
 }
 /* GLOBAL */
 html {
@@ -51,6 +53,48 @@ img {
   margin-right: auto;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: ;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.button-green {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.button-green:hover {
+  opacity: 0.8;
+}
+
+.button-green:active {
+  opacity: 0.6;
+}
+
+.button-brown {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.button-brown:hover {
+  opacity: 0.8;
+}
+
+.button-brown:active {
+  opacity: 0.6;
+}
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -61,6 +105,7 @@ img {
 /* SITE-HEADER-INTRO-WRAPPER */
 
 .site-header-hero-wrapper {
+  background-color: var(--light-brown);
   background-image: url(../img/lightbg.png);
 }
 
@@ -80,6 +125,7 @@ img {
 .site-header-logo-link {
   display: flex;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .site-header-logo-link:hover {
@@ -115,6 +161,7 @@ img {
   line-height: normal;
   color: var(--text-color);
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .sitenav-item-link:hover {
@@ -123,4 +170,50 @@ img {
 
 .sitenav-item-link:active {
   opacity: 0.6;
+}
+
+/* HERO */
+
+.hero {
+}
+.hero-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-info-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding-top: 116px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 116px;
+}
+.hero-heading {
+  font-size: 64px;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #000;
+}
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 34px;
+}
+
+.hero-text:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.hero-img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero-img-index {
+  height: 696px;
 }
