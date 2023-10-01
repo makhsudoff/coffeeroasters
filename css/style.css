@@ -56,7 +56,6 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
-  background-color: ;
   padding: 16px 24px;
   font-size: 16px;
   font-weight: 500;
@@ -105,7 +104,7 @@ img {
 /* SITE-HEADER-INTRO-WRAPPER */
 
 .site-header-hero-wrapper {
-  background-color: var(--light-brown);
+
   background-image: url(../img/lightbg.png);
 }
 
@@ -174,8 +173,6 @@ img {
 
 /* HERO */
 
-.hero {
-}
 .hero-container {
   display: flex;
   padding-left: 0;
